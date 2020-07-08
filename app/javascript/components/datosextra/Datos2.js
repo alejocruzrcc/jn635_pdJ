@@ -28,7 +28,7 @@ export default function Datos2(props) {
               <FormLabel component="legend">Tipo de Facturación</FormLabel>
               <Grid item xs={12}>
                <FormControl component="fieldset">
-                  <RadioGroup aria-label="tipoFacturacion" name="tipoFacturacion" value={value} onChange={handleChange}>
+                  <RadioGroup id="tipofactu" aria-label="tipoFacturacion" name="tipoFacturacion" value={value} onChange={handleChange}>
                     <FormControlLabel value="personal" control={<Radio color="primary"/>} label="Personal" />
                     <FormControlLabel value="empresa" control={<Radio color="primary"/>} label="Empresa" />
                   </RadioGroup>

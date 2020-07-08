@@ -65,7 +65,6 @@ function getStepContent(step) {
     case 1:
       return <Facturacion />;
     case 2:
-      console.log(tipofac)
       return <Perfil />;
     default:
       throw new Error('Unknown step');

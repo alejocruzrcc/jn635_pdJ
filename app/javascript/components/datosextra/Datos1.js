@@ -10,6 +10,7 @@ import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import FormControl from '@material-ui/core/FormControl';
 import Button from '@material-ui/core/Button';
+import FormLabel from '@material-ui/core/FormLabel';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -92,7 +93,10 @@ export default function Datos1() {
                   autoComplete="shipping address-line1"
                 />
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12}>
+              <FormLabel component="legend">
+                Adjunte su documento de identidad...
+              </FormLabel>
               <input
                 className={classes.input}
                 accept=".pdf,.doc"

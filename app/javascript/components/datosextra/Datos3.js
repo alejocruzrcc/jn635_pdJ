@@ -20,12 +20,13 @@ const useStyles = makeStyles((theme) => ({
         },
 }));
 
-
 export default function Review() {
 
   const classes = useStyles();
+  const tipoFactu = document.querySelector('input[name="tipoFacturacion"]:checked').value;
   return (
     <React.Fragment>
+    {tipoFactu == "personal" && (
     <div>
     <Typography variant="h6" gutterBottom>
       Perfil
@@ -51,6 +52,8 @@ export default function Review() {
       </Grid>
     </Grid>
     </div>
+    )}
+    {tipoFactu == "empresa" && (
     <div>
     <Grid container spacing={3}> 
       <Grid item xs={12}>
@@ -122,6 +125,7 @@ export default function Review() {
       </Grid>
     </Grid>
     </div>
+    )}
     </React.Fragment>
   );
 }
